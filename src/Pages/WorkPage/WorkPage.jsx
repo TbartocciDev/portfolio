@@ -2,7 +2,7 @@ import "./WorkPage.css"
 
 export default function WorkPage() {
     return (
-        <main className="WorkPage">
+        <main className="WorkPage" id="Work">
             <div className="content">
                 
             </div>

@@ -10,8 +10,8 @@ import { useState, useEffect } from 'react';
 import NavigationBar from './NavigationBar/NavigationBar.jsx';
 
 //Pages
-import HomePage from './HomePage/HomePage';
-import WorkPage from './WorkPage/WorkPage';
+import HomePage from './Pages/HomePage/HomePage';
+import WorkPage from './Pages/WorkPage/WorkPage';
 
 function App() {
   let NavBar = null

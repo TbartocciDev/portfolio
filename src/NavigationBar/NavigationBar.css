@@ -30,6 +30,11 @@
     background-color: rgb(137, 12, 12);
 }
 
+.NavigationLinks-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .NavigationLink {
     font-size: 2.5vh;
     background-color: transparent;
@@ -38,9 +43,17 @@
     margin-left: 2vw;
 }
 
-.NavigationLinks-div {
-    display: flex;
-    justify-content: space-between;
+.NavigationLink:hover {
+    animation: LinkHovered 0.5s;
+    transform: rotate(-10deg);
+    scale: 108%;
+    color: rgb(131, 232, 100);
+}
+
+.NavigationLink:not(:hover) {
+    animation: LinkUnHovered 0.5s;
+    transform: rotate(0deg);
+    scale: 100%;
 }
 
 #SelectedLink {
@@ -50,7 +63,7 @@
     border-radius: 1.5vh;
 }
 
-/* Scroll Change */
+/* Nav Bar Scroll Change */
 #Scrolled {
     animation: NavBarBlur 1s;
     background-color: var(--NavBlur);
@@ -76,5 +89,29 @@
     }
     100% {
         background-color: var(--NavClear);
+    }
+}
+
+/* Hover Over Link Change */
+
+@keyframes LinkHovered {
+    0% {
+        transform: rotate(0deg);
+        scale: 100%;
+    }
+    100% {
+        transform: rotate(-10deg);
+        scale: 108%;
+    }
+}
+
+@keyframes LinkUnHovered {
+    0% {
+        transform: rotate(-10deg);
+        scale: 108%;
+    }
+    100% {
+        transform: rotate(0deg);
+        scale: 100%;
     }
 }
