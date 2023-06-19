@@ -1,3 +1,8 @@
+:root {
+    --NavClear: transparent;
+    --NavBlur: rgb(63, 63, 63);
+}
+
 .NavigationBar {
     position: fixed;
     height: 9vh;
@@ -5,7 +10,6 @@
     padding-bottom: 1vh;
     display: flex;
     justify-content: center;
-    /* background-color: gray; */
 }
 
 .content {
@@ -44,4 +48,33 @@
     padding: 0.5vh;
     padding-inline: 1.5vh;
     border-radius: 1.5vh;
+}
+
+/* Scroll Change */
+#Scrolled {
+    animation: NavBarBlur 1s;
+    background-color: var(--NavBlur);
+}
+
+#UnScrolled {
+    animation: NavBarClear 1s;
+    background-color: var(--NavClear);
+}
+
+@keyframes NavBarBlur {
+    0% {
+        background-color: var(--NavClear);
+    }
+    100% {
+        background-color: var(--NavBlur);
+    }
+}
+
+@keyframes NavBarClear {
+    0% {
+        background-color: var(--NavBlur);
+    }
+    100% {
+        background-color: var(--NavClear);
+    }
 }

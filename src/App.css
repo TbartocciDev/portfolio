@@ -4,10 +4,11 @@
   padding: 0;
 }
 
-.App {
+body {
   background-color: black;
-  min-height: 100vh;
 }
+
+
 /* .App {
   text-align: center;
 }
