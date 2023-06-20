@@ -14,41 +14,45 @@ const Data = {
             "Projects",
             "Contact",
             "More"
-            // "# Skills & Tools",
-            // "/ About",
-            // "/ Contact",
-            // "/ Blog"
         ]
     },
     homePage: {
         introSection: {
             header: "Greetings, I'm Tommy!",
             subheader: "Software Engineer from New Jersey.",
-            summary: "I specialize in iOS and web development",
+            summary: "I specialize in iOS and web development.",
             statusData: {
                 status: "open",
                 info: "Looking for a new opportunity"
             }
         },
-        ProjectsSection: {
+        projectsSection: {
             header: "Applications",
-            subheader: "A selection of stuff I've built",
+            subheader: "A selection of things I've built",
             projects: [
                 {
                     name: "The Encryptor",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                    projectType: "On iOS Store",
+                    appType: "iOS",
                 },
                 {
                     name: "The Encryptor",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                    projectType: "Personal Project",
+                    appType: "iOS",
                 },
                 {
                     name: "The Encryptor",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                    projectType: "on iOS store",
+                    appType: "Web"
                 },
                 {
                     name: "The Encryptor",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                    projectType: "personal project",
+                    appType: "Web"
                 },
             ]
 

@@ -28,6 +28,7 @@
     height: 70%;
     aspect-ratio: 1/1;
     background-color: rgb(137, 12, 12);
+    display: none;
 }
 
 .NavigationLinks-div {

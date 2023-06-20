@@ -4,7 +4,6 @@
     --CRed: #b75854;
 }
 .IntroSection {
-    background-color: #000000;
     height: 100vh;
 }
 .IntroSection .content {
@@ -17,10 +16,6 @@
     color: white;
 }
 .IntroSection h2 {
-    font-size: 4rem;
-    color: var(--CBlue);
-}
-.IntroSection h3 {
     font-size: 2rem;
     color: gray;
 }
@@ -31,6 +26,6 @@
 .ProjectButton {
     position: absolute;
     margin-top: 80vh;
-    height: 6rem;
+    height: 4.5rem;
     z-index: 0;
 }

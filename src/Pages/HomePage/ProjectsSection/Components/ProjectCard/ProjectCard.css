@@ -1,0 +1,34 @@
+.ProjectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-radius: 2rem;
+    background-color: #141414;
+    height: 60vh;
+    width: 100%;
+}
+.ProjectCard h1 {
+    font-size: 3rem;
+    width: 100%;
+    margin-left: 2rem;
+}
+.ProjectCard .info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(67, 67, 67);
+    width: 100%;
+    height: 25%;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.ProjectCard h3 {
+    margin-left: 2rem;
+    color: gray;
+}
+
+.ProjectCard img {
+    height: 70%;
+    object-fit: contain;
+}
