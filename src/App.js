@@ -11,7 +11,6 @@ import NavigationBar from './NavigationBar/NavigationBar.jsx';
 
 //Pages
 import HomePage from './Pages/HomePage/HomePage';
-import WorkPage from './Pages/WorkPage/WorkPage';
 
 function App() {
   let NavBar = null
@@ -39,8 +38,7 @@ function App() {
   return (
     <div className="App" onScroll={handleScroll}>
       <NavigationBar data={data.nav}/>
-      <HomePage />
-      <WorkPage />
+      <HomePage data={data.homePage}/>
     </div>
   );
 }

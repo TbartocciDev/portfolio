@@ -1,0 +1,16 @@
+.ProjectButton {
+    display: flex;
+    align-items: center;
+}
+.ProjectButton:hover {
+    cursor: pointer;
+}
+.ProjectButton img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    transform: rotate(180deg);
+}
+.ProjectButton h3 {
+    margin-left: 2rem;
+    color: white;
+}

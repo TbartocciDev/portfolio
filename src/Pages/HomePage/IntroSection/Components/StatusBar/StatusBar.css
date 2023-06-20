@@ -1,0 +1,61 @@
+:root {
+    --openLight: rgb(16, 185, 16);;
+    --openDark: rgba(4, 105, 9, 0.7);
+    --closedLight: red;
+    --closedDark: rgba(112, 7, 7, 0.7);
+    --exploringLight: rgb(55, 76, 239);
+    --exploringDark: rgba(7, 7, 160, 0.7);
+}
+
+.StatusBar {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 3vh;
+    padding-inline: 1rem;
+}
+.StatusCircle {
+    height: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.StatusBar p {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    white-space: nowrap;
+}
+
+
+/* Status Based Styling */
+
+#OpenToWork {
+    background-color: var(--openDark);
+}
+#OpenToWork div {
+    background-color: var(--openLight);
+}
+#OpenToWork p {
+    color: var(--openLight);
+}
+
+#ClosedToWork {
+    background-color: var(--closedDark);
+}
+#ClosedToWork div {
+    background-color: var(--closedLight);
+}
+#ClosedToWork p {
+    color: var(--closedLight);
+}
+
+#ExploringWork {
+    background-color: var(--exploringDark);
+}
+#ExploringWork div {
+    background-color: var(--exploringLight);
+}
+#ExploringWork p {
+    color: var(--exploringLight);
+}

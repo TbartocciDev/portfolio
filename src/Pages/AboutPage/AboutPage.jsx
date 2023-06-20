@@ -1,8 +1,8 @@
-import "./WorkPage.css"
+import "./AboutPage.css"
 
-export default function WorkPage() {
+export default function AboutPage() {
     return (
-        <main className="WorkPage" id="Work">
+        <main className="AboutPage" id="About">
             <div className="content">
                 
             </div>

@@ -1,5 +1,9 @@
 .HomePage {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.HomePage main {
+    display: flex;
+    justify-content: center;
 }

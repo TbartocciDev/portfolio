@@ -11,12 +11,48 @@ const Data = {
         pageName: "Tommy Bartocci",
         links: [
             "Home",
-            "Work",
-            // "Skills & Tools",
-            // "About",
-            // "Contact",
-            // "Blog"
+            "Projects",
+            "Contact",
+            "More"
+            // "# Skills & Tools",
+            // "/ About",
+            // "/ Contact",
+            // "/ Blog"
         ]
+    },
+    homePage: {
+        introSection: {
+            header: "Greetings, I'm Tommy!",
+            subheader: "Software Engineer from New Jersey.",
+            summary: "I specialize in iOS and web development",
+            statusData: {
+                status: "open",
+                info: "Looking for a new opportunity"
+            }
+        },
+        ProjectsSection: {
+            header: "Applications",
+            subheader: "A selection of stuff I've built",
+            projects: [
+                {
+                    name: "The Encryptor",
+                    description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                },
+                {
+                    name: "The Encryptor",
+                    description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                },
+                {
+                    name: "The Encryptor",
+                    description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                },
+                {
+                    name: "The Encryptor",
+                    description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                },
+            ]
+
+        }
     }
 }
 const Old = {

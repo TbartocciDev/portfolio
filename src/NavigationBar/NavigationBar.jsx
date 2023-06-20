@@ -8,7 +8,7 @@ export default function NavigationBar({ data }) {
     }
     
     return (
-        <main className="NavigationBar" id="UnScrolled">
+        <div className="NavigationBar" id="UnScrolled">
             <div className="content">
                 <img src="" alt="" className="NavigationLogo"/>
                 <div className="NavigationLinks-div">
@@ -21,6 +21,6 @@ export default function NavigationBar({ data }) {
                     ))}
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
