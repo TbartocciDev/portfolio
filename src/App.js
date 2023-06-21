@@ -1,4 +1,6 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
 
 // Data for site
 import { Data as data } from './data';
@@ -11,6 +13,8 @@ import NavigationBar from './NavigationBar/NavigationBar.jsx';
 
 //Pages
 import HomePage from './Pages/HomePage/HomePage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import ProjectDetailPage from './Pages/ProjectDetailPage/ProjectDetailPage';
 
 function App() {
   let NavBar = null
@@ -38,7 +42,11 @@ function App() {
   return (
     <div className="App" onScroll={handleScroll}>
       <NavigationBar data={data.nav}/>
-      <HomePage data={data.homePage}/>
+      <Routes>
+        <Route path='/' element={<HomePage data={data.homePage}/>}></Route>
+        <Route path='/:projectName' element={<ProjectDetailPage data={data.homePage.projectsSection.projects}/>}></Route>
+        <Route path='/about' element={<AboutPage />}></Route>
+      </Routes>
     </div>
   );
 }

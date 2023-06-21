@@ -30,26 +30,30 @@ const Data = {
             header: "Applications",
             subheader: "A selection of things I've built",
             projects: [
-                {
+                {   
                     name: "The Encryptor",
+                    summary: "Some Summary",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "On iOS Store",
                     appType: "iOS",
                 },
                 {
-                    name: "The Encryptor",
+                    name: "Geographi",
+                    summary: "Some Summary",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "Personal Project",
                     appType: "iOS",
                 },
                 {
-                    name: "The Encryptor",
+                    name: "Movie Database",
+                    summary: "Some Summary",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "on iOS store",
                     appType: "Web"
                 },
                 {
                     name: "The Encryptor",
+                    summary: "Some Summary",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "personal project",
                     appType: "Web"

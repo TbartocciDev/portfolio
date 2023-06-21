@@ -23,21 +23,7 @@ main .content {
   flex-direction: column;
 }
 
-/* h1 {
-  color: white;
-  font-size: 6vh;
-}
-
-h2 {
-  color: white;
-  width: 70%;
-} */
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -70,4 +56,4 @@ h2 {
   to {
     transform: rotate(360deg);
   }
-} */
+}  */

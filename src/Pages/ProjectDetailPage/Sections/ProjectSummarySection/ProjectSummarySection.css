@@ -1,0 +1,22 @@
+.ProjectSummarySection {
+    color: white;
+    height: 90vh;
+}
+.ProjectSummarySection .content {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.ProjectSummarySection .summary-div {
+    /* background-color: rgb(38, 255, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.ProjectSummarySection img {
+    background-color: rebeccapurple;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
