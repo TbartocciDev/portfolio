@@ -1,0 +1,25 @@
+.ProjectLinksSection {
+    padding-bottom: 2rem;
+}
+.ProjectLinksSection .content{
+    display: flex;
+    /* align-items: center; */
+}
+.project-links-div {
+    height: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    width: 70%;
+}
+.project-link {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* background-color: gray; */
+    border-radius: 2rem;
+}
+.project-link h2 {
+    color: white;
+    text-decoration: underline;
+}

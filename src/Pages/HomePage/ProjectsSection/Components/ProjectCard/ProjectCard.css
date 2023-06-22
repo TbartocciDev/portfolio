@@ -1,4 +1,5 @@
 .ProjectCard {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,13 +26,17 @@ a, a:visited, a:active, a:link {
     height: 25%;
     border-radius: 0 0 2rem 2rem;
 }
-
 .ProjectCard h3 {
     margin-left: 2rem;
     color: gray;
 }
-
 .ProjectCard img {
     height: 70%;
     object-fit: contain;
+}
+.type {
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    margin-bottom: 54vh;
 }

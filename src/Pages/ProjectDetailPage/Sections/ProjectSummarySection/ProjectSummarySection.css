@@ -3,20 +3,23 @@
     height: 90vh;
 }
 .ProjectSummarySection .content {
-    /* background-color: aqua; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    align-items: center;
 }
 .ProjectSummarySection .summary-div {
-    /* background-color: rgb(38, 255, 0); */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 70%;
     width: 100%;
 }
-.ProjectSummarySection img {
-    background-color: rebeccapurple;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+.ProjectSummarySection .img-div {
+    display: flex;
+    justify-content: end;
+    height: 80vh;
+}
+.ProjectSummarySection h2 {
+    margin-top: 2rem;
 }

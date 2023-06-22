@@ -31,18 +31,48 @@ const Data = {
             subheader: "A selection of things I've built",
             projects: [
                 {   
-                    name: "The Encryptor",
-                    summary: "Some Summary",
+                    name: "Some App",
+                    summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                    qui officia deserunt mollit anim id est laborum`,
+                    previews: [
+                        "/iPhone.png",
+                        "/iPhone.png",
+                        "/iPhone.png",
+                    ],
+                    technologies: [
+                        "Xcode",
+                        "Swift",
+                        "UiKit",
+                        "API Integration",
+                        "Core Data",
+                        "Xcode",
+                        "Swift",
+                        "UiKit",
+                        "API Integration",
+                    ],
+                    links: [
+                        {
+                            title: "View Project",
+                            link: "https://www.google.com/"
+                        },
+                        {
+                            title: "View Code",
+                            link: "https://www.google.com/"
+                        },
+                    ],
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "On iOS Store",
                     appType: "iOS",
                 },
                 {
-                    name: "Geographi",
+                    name: "Some Website",
                     summary: "Some Summary",
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
                     projectType: "Personal Project",
-                    appType: "iOS",
+                    appType: "Web",
                 },
                 {
                     name: "Movie Database",

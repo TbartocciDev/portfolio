@@ -8,7 +8,9 @@ export default function ProjectSummarySection({ data }) {
                     <h1>{data.name}</h1>
                     <h2>{data.summary}</h2>
                 </div>
-                <img src="" alt="" />
+                <div className="img-div">
+                    <img src="iPhone.png" alt="" />
+                </div>
             </div>
         </main>
     )

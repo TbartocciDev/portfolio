@@ -1,5 +1,11 @@
 .ProjectTechnologiesSection {
     color: white;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-bottom: 2rem;
     /* background-color: red; */
+}
+.technologies-div {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

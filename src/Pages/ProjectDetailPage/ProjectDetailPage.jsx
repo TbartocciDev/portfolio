@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 
 // Sections
 import ProjectSummarySection from "./Sections/ProjectSummarySection/ProjectSummarySection";
+import ProjectPreviewsSection from "./Sections/ProjectPreviewsSection/ProjectPreviewsSection";
 import ProjectTechnologiesSection from "./Sections/ProjectTechnologiesSection/ProjectTechnologiesSection";
+import ProjectLinksSection from "./Sections/ProjectLinksSection/ProjectLinksSection";
 
 export default function ProjectDetailPage({ data }) {
 
@@ -14,7 +16,9 @@ export default function ProjectDetailPage({ data }) {
     return (
         <main className="ProjectDetailPage">
             <ProjectSummarySection data={project}/>
-            <ProjectTechnologiesSection />
+            <ProjectPreviewsSection data={project.previews}/>
+            <ProjectTechnologiesSection data={project.technologies}/>
+            <ProjectLinksSection data={project.links}/>
         </main>
     )
 }
