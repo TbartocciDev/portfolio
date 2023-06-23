@@ -8,6 +8,7 @@ export default function ProjectLinksSection({ data }) {
                     {data.map((link) => (
                         <div className="project-link">
                             <h2>{link.title}</h2>
+                            <img src="https://icongr.am/clarity/angle.svg?size=128&color=ffffff" alt="" />
                         </div>
                     ))}
                 </div>

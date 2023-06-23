@@ -22,4 +22,8 @@
 }
 .ProjectSummarySection h2 {
     margin-top: 2rem;
+    color: gray;
+}
+.ProjectSummarySection h4 {
+    margin-top: 2rem;
 }

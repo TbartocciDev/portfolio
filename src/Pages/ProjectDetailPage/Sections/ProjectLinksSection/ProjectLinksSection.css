@@ -14,12 +14,14 @@
 }
 .project-link {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    /* background-color: gray; */
+    /* justify-content: center; */
+    align-items: center;
     border-radius: 2rem;
+}
+.project-link img {
+    height: 2rem;
+    transform: rotate(90deg);
 }
 .project-link h2 {
     color: white;
-    text-decoration: underline;
 }
