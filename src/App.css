@@ -21,14 +21,12 @@ body {
 }
 
 /* Section Formatting */
-.App main main{
+.App main main {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.App main main .content{
-  display: flex;
-  flex-direction: column;
+.App main main .content {
   height: 100%;
   width: 80%;
   padding-top: 10vh;

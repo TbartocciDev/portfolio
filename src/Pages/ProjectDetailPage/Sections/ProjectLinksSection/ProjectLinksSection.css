@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 4rem;
-    width: 70%;
+    width: 60%;
 }
 .project-link {
     display: flex;
@@ -26,4 +26,5 @@
 }
 .project-link h2 {
     color: white;
+    width: auto;
 }

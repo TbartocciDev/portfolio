@@ -1,8 +1,0 @@
-.ProjectDetailPage {
-    display: flex;
-    flex-direction: column;
-}
-.ProjectDetailPage main {
-    display: flex;
-    justify-content: center;
-}

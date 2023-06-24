@@ -8,9 +8,9 @@
     width: 100vw;
 }
 .IntroSection .content {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: white;
 }
 .IntroSection h1 {
     color: white;

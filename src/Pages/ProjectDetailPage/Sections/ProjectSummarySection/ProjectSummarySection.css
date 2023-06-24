@@ -1,24 +1,19 @@
 .ProjectSummarySection {
     color: white;
-    height: 90vh;
 }
 .ProjectSummarySection .content {
     display: grid;
-    height: 100%;
-    width: 100%;
     grid-template-columns: 60% 40%;
-    align-items: center;
+    align-items: end;
 }
 .ProjectSummarySection .summary-div {
     display: flex;
     flex-direction: column;
-    height: 70%;
-    width: 100%;
 }
 .ProjectSummarySection .img-div {
     display: flex;
     justify-content: end;
-    height: 80vh;
+    height: 70vh;
 }
 .ProjectSummarySection h2 {
     margin-top: 2rem;

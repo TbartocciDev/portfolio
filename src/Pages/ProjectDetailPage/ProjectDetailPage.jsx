@@ -9,9 +9,8 @@ import ProjectLinksSection from "./Sections/ProjectLinksSection/ProjectLinksSect
 
 export default function ProjectDetailPage({ data }) {
 
-    let { projectName } = useParams();
-    let project = data.find((pro) => pro.name === projectName);
-    console.log(project)
+    const { projectName } = useParams();
+    const project = data.find((pro) => pro.name === projectName);
 
     return (
         <main className="ProjectDetailPage">
