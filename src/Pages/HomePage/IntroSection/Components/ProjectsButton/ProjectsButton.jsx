@@ -7,7 +7,7 @@ export default function ProjectButton() {
     }
     return (
         <div className="ProjectButton" onClick={scrollToProjects}>
-            <img src="https://icongr.am/clarity/angle-double.svg?size=128&color=808080" alt="" />
+            <img src="https://icongr.am/clarity/angle.svg?size=128&color=808080" alt="" />
             <h3>See Projects</h3>
         </div>
     )

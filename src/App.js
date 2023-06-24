@@ -15,6 +15,7 @@ import NavigationBar from './NavigationBar/NavigationBar.jsx';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import ProjectDetailPage from './Pages/ProjectDetailPage/ProjectDetailPage';
+import ContactPage from './Pages/ContactPage/ContactPage';
 
 function App() {
   let NavBar = null
@@ -45,7 +46,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage data={data.homePage}/>}></Route>
         <Route path='/:projectName' element={<ProjectDetailPage data={data.homePage.projectsSection.projects}/>}></Route>
-        <Route path='/about' element={<AboutPage />}></Route>
+        <Route path='/about' element={<AboutPage data={data.aboutPage}/>}></Route>
+        <Route path='/contact' element={<ContactPage />}/>
       </Routes>
     </div>
   );

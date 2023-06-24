@@ -1,11 +1,14 @@
 import "./AboutPage.css"
 
-export default function AboutPage() {
+// Section
+import AboutIntroSection from "./AboutIntroSection/AboutIntroSection"
+import AboutTechnologiesSection from "./AboutTechnologiesSection/AboutTechnologiesSection"
+
+export default function AboutPage({ data }) {
     return (
-        <main className="AboutPage" id="About">
-            <div className="content">
-                
-            </div>
+        <main className="AboutPage">
+            <AboutIntroSection data={data.introSection}/>
+            <AboutTechnologiesSection data={data.technologiesSection}/>
         </main>
     )
 }

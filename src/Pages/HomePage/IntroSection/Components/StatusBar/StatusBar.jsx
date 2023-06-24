@@ -1,26 +1,13 @@
 import "./StatusBar.css"
+import { Link } from "react-router-dom"
 
 export default function StatusBar({ data }) {
-    if (data.status.toLowerCase() === "open") {
-        return (
-            <div className="StatusBar" id="OpenToWork">
+    return (
+        <Link to="/contact">
+            <div className="StatusBar" id={data.status.toLowerCase()}>
                 <div className="StatusCircle"></div>
                 <p className="StatusLabel">{data.info}</p>
             </div>
-        )
-    } else if (data.status.toLowerCase() === "closed") {
-        return (
-            <div className="StatusBar" id="ClosedToWork">
-                <div className="StatusCircle"></div>
-                <p className="StatusLabel">{data.info}</p>
-            </div>
-        )
-    } else if (data.status.toLowerCase() === "exploring") {
-        return (
-            <div className="StatusBar" id="ExploringWork">
-                <div className="StatusCircle"></div>
-                <p className="StatusLabel">{data.info}</p>
-            </div>
-        )
-    }
+        </Link>
+    )
 }

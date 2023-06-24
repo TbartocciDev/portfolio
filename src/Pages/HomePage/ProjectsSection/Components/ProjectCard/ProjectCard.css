@@ -8,6 +8,10 @@
     background-color: #141414;
     height: 60vh;
     width: 100%;
+    transition: 1s ease;
+}
+.ProjectCard:hover {
+    transform: scale(104%);
 }
 a, a:visited, a:active, a:link {
   text-decoration: none;  
@@ -36,7 +40,7 @@ a, a:visited, a:active, a:link {
 }
 .type {
     position: absolute;
-    /* background-color: rebeccapurple; */
     width: 100%;
     margin-bottom: 54vh;
+    padding-left: 2rem;
 }

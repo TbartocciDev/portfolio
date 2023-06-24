@@ -1,3 +1,9 @@
 .AboutPage {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.AboutPage main {
+    display: flex;
+    justify-content: center;
 }

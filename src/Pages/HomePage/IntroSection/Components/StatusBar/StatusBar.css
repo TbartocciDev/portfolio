@@ -1,61 +1,84 @@
 :root {
-    --openLight: rgb(16, 185, 16);;
+    --openLight: rgb(16, 185, 16, 0.6);;
     --openDark: rgba(4, 105, 9, 0.7);
     --closedLight: red;
     --closedDark: rgba(112, 7, 7, 0.7);
     --exploringLight: rgb(55, 76, 239);
     --exploringDark: rgba(7, 7, 160, 0.7);
 }
-
 .StatusBar {
     display: flex;
     align-items: center;
     width: fit-content;
     border-radius: 3vh;
     padding-inline: 1rem;
+    transition: 1s ease;
 }
 .StatusCircle {
     height: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
-
 .StatusBar p {
     font-size: 2rem;
     padding-left: 1rem;
-    padding-right: 1.5rem;
     white-space: nowrap;
+    background: linear-gradient(90deg, #af0f0f, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: glimmer 3.5s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: var(--openLight);
+}
+.StatusBar:hover {
+    transform: scale(105%);
 }
 
+@keyframes glimmer {
+    0% {
+        background-position: -500%;
+        scale: 100%;
+    }
+    10% {
+        background-position: -500%;
+    }
+    50% {
+        scale: 101%;
+    }
+    100% {
+        scale: 100%;
+        background-position: 500%;
+    }
+}
 
 /* Status Based Styling */
 
-#OpenToWork {
+#open {
     background-color: var(--openDark);
 }
-#OpenToWork div {
+#open .StatusCircle {
     background-color: var(--openLight);
 }
-#OpenToWork p {
+#open p {
     color: var(--openLight);
 }
 
-#ClosedToWork {
+#closed {
     background-color: var(--closedDark);
 }
-#ClosedToWork div {
+#closed .StatusCircle {
     background-color: var(--closedLight);
 }
-#ClosedToWork p {
+#closed p {
     color: var(--closedLight);
 }
 
-#ExploringWork {
+#exploring {
     background-color: var(--exploringDark);
 }
-#ExploringWork div {
+#exploring .StatusCircle {
     background-color: var(--exploringLight);
 }
-#ExploringWork p {
+#exploring p {
     color: var(--exploringLight);
 }

@@ -3,17 +3,29 @@ const iconSize = 128
 const contactLinkColor = "ffffff"
 const contactLinkSize = 128
 const trelloColor = "325df9"
-const expressColor = "000000"
+const expressColor = "ffffff"
 
 const Data = {
     nav: {
         logoURL: "",
         pageName: "Tommy Bartocci",
         links: [
-            "Home",
-            "Projects",
-            "Contact",
-            "More"
+            {
+                title: "Home",
+                url: "/"
+            },
+            {
+                title: "About",
+                url: "/About"
+            },
+            {
+                title: "Contact",
+                url: "/Contact"
+            },
+            // {
+            //     title: "More",
+            //     url: ""
+            // },
         ]
     },
     homePage: {
@@ -57,11 +69,11 @@ const Data = {
                     links: [
                         {
                             title: "View Project",
-                            link: "https://www.google.com/"
+                            url: "https://www.google.com/"
                         },
                         {
                             title: "View Code",
-                            link: "https://www.google.com/"
+                            url: "https://www.google.com/"
                         },
                     ],
                     description: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
@@ -92,33 +104,59 @@ const Data = {
             ]
 
         }
+    },
+    aboutPage: {
+        introSection: {
+            header: "About",
+            summary: `Developing applications is something that truly fascinates me on a daily basis, each task is like 
+            solving a piece to a puzzle. I love learning about new technologies and concepts along the way as well.`,
+            background: `I believe my background helped shape me for this type of industry. I grew up in two different worlds: 
+            One with creative freedom that my family provided me,
+            and one with discipline and work ethic the world of sports provided me.`,
+            finalWords: "Thank you for visiting my website! If you have any projects, comments or suggestions, please reach out!"
+        },
+        descriptionSection: {
+            intro: "An NJ based devloper who...",
+            possibleDescriptions: [
+                {string: "is an animal lover", emoji:"🐿"},
+                {string: "is a big Star Wars nerd", emoji:"🔭"},
+                {string: "loves the great outdoors", emoji:"🏔"},
+                {string: "admires architecture", emoji:"🕌"},
+                {string: "tries new foods", emoji:"🧆"},
+                {string: "loves music", emoji:"🎧"},
+                {string: "is a sports fanatic", emoji:"⚽️🏈🏀"},
+                {string: "craves adventure", emoji:"🛣️"},
+                {string: "reads often", emoji:"📚"},
+                {string: "cherishes friends and family", emoji:"👨‍👩‍👧‍👦"},
+            ]
+        }, 
+        technologiesSection: {
+            header: "Technologies",
+            technologies: [
+                {name: "Swift", url:"https://icongr.am/devicon/swift-original.svg?size=128&color=currentColor"},
+                {name: "React", url:"https://icongr.am/devicon/react-original.svg?size=128&color=currentColor"},
+                {name: "JavaScript", url:"https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"},
+                {name: "Python", url:"https://icongr.am/devicon/python-original.svg?size=128&color=currentColor"},
+                {name: "HTML", url:"https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"},
+                {name: "CSS", url:"https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"},
+                {name: "Django", url:"https://icongr.am/devicon/django-original.svg?size=128&color=currentColor"},
+                {name: "Express", url:"https://icongr.am/devicon/express-original.svg?size="+iconSize+"&color="+expressColor},
+                {name: "Trello", url:"https://icongr.am/devicon/trello-plain.svg?size="+iconSize+"&color="+trelloColor},
+                {name: "Git", url:"https://icongr.am/devicon/git-original.svg?size=128&color=currentColor"},
+                {name: "Heroku", url:"https://icongr.am/devicon/heroku-original.svg?size=128&color=currentColor"},
+                {name: "MongoDB", url:"https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor"},
+            ]
+
+        },
+        outsideSection: {
+
+        }
     }
 }
 const Old = {
     home: {
         title: "Tommy Bartocci",
         intro: "I am a NJ based devloper who...",
-        possibleIntros: [
-            {string: "is an animal lover", emoji:"🐿"},
-            {string: "is a big Star Wars nerd", emoji:"🔭"},
-            {string: "loves the great outdoors", emoji:"🏔"},
-            {string: "admires architecture", emoji:"🕌"},
-            {string: "tries new foods", emoji:"🧆"},
-            {string: "loves music", emoji:"🎧"},
-            {string: "is a sports fanatic", emoji:"⚽️🏈🏀"},
-            {string: "craves adventure", emoji:"🛣️"},
-            {string: "reads often", emoji:"📚"},
-            {string: "cherishes friends and family", emoji:"👨‍👩‍👧‍👦"},
-        ]
-    },
-    about: {
-        header: "About Me",
-        subheader: "Who is Tommy?",
-        summary: `Developing applications is something that truly fascinates me on a daily basis, each task is like solving a piece to a puzzle.
-        I love learning about new technologies and concepts along the way as well.`,
-        background: `I believe my background helped shape me for this type of industry. I grew up in two different worlds: One with creative freedom that my family provided me,
-        and one with discipline and work ethic the world of sports provided me.`,
-        finalWords: "I Hope you enjoy my site and if you have any comments or suggestions, reach out!"
     },
     apps: {
         header: "Applications",

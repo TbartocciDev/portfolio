@@ -3,7 +3,6 @@
 }
 .ProjectLinksSection .content{
     display: flex;
-    /* align-items: center; */
 }
 .project-links-div {
     height: 4rem;
@@ -14,9 +13,12 @@
 }
 .project-link {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     border-radius: 2rem;
+    transition: 1s ease;
+}
+.project-link:hover {
+    transform: scale(104%) ;
 }
 .project-link img {
     height: 2rem;

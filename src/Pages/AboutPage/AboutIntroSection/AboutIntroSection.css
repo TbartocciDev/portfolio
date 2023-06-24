@@ -1,0 +1,26 @@
+.AboutIntroSection {
+    width: 100%;
+    height: 90vh;
+}
+.AboutIntroSection .content {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.AboutIntroSection .about-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AboutIntroSection .img-div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.AboutIntroSection h2 {
+    margin-top: 1rem;
+}
+.AboutIntroSection img {
+    width: 35vh;
+    aspect-ratio: 1/1;
+    border-radius: 30%;
+}
