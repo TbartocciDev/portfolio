@@ -1,3 +1,7 @@
 .ContactPage {
-    
+    color: white;
+    background-color: blue;
+}
+.ContactPage .content {
+    background-color: red;
 }

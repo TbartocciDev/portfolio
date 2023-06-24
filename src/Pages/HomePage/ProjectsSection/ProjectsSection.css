@@ -1,6 +1,5 @@
 .ProjectsSection {
-    min-height: 100vh;
-    color: white;
+    width: 100%;
 }
 .ProjectsSection h1 {
     color: white;
@@ -9,12 +8,11 @@
     color: gray;
 }
 .ProjectsDiv {
+    padding-top: 2vw;
     width: 100%;
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 2vw;
 }
 /* .ProjectsDiv :nth-child(3) {
     grid-column: span 2;

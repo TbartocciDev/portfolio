@@ -1,9 +1,0 @@
-.HomePage {
-    display: flex;
-    flex-direction: column;
-}
-
-.HomePage main {
-    display: flex;
-    justify-content: center;
-}
