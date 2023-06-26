@@ -8,7 +8,7 @@
     color: gray;
 }
 .ProjectsDiv {
-    padding-top: 2vw;
+    padding-top: 4vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,3 +17,19 @@
 /* .ProjectsDiv :nth-child(3) {
     grid-column: span 2;
 } */
+
+@media (max-width: 800px) {
+    .ProjectsDiv {
+        /* grid-template-columns: 1fr; */
+        gap: 4vh;
+    }
+    .ProjectsSection h2 {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 1000px) {
+    .ProjectsDiv {
+        grid-template-columns: 1fr;
+        gap: 4vh;
+    }
+}

@@ -9,30 +9,52 @@ export default function NavigationBar({ data }) {
 
     useEffect(() => {
         movingDiv = document.querySelector('.nav-moving')
+        const linksDiv = document.querySelector('.Links-div')
         const homePageLink = document.querySelector('.NavigationLink')
-        const newWidth = homePageLink.offsetWidth;
-        console.log('normal: ',movingDiv.offsetWidth,' new: ', newWidth)
-        movingDiv.style.width = newWidth+'px'
-        console.log('is now: ', movingDiv.offsetWidth)
+        const divHeight = linksDiv.offsetHeight;
+        const linkHeight = homePageLink.offsetHeight;
+        homePageLink.setAttribute('id', 'SelectedNavLink')
+
+        console.log('normal: ',movingDiv.offsetWidth,' new: ', homePageLink.offsetWidth)
+        movingDiv.style.width = homePageLink.offsetWidth+'px'
+        // movingDiv.style.height = ((linkHeight/window.innerHeight)*100)+'vh'
+        movingDiv.style.height = linkHeight + 'px'
+
+        movingDiv.style.top = (((1-(linkHeight/divHeight)))/4)*100+'px'
     },[])
+
+    window.onresize = function() {
+        const homePageLink = document.querySelector('.NavigationLink')
+        const linkHeight = homePageLink.offsetHeight;
+        // movingDiv.style.height = linkHeight + 'px'
+
+    }
     
     function handleLinkClick(evt) {
+        // check for scroll
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+
         // moving x coord
+        movingDiv.style.marginLeft = '0vh'
         const linksDiv = document.querySelector('.Links-div').getBoundingClientRect();
         const startingX = linksDiv.left;
         const rect = evt.target.getBoundingClientRect();
         const rectXPos = rect.left;
         const finalXPos = Math.abs(startingX - rectXPos);
-
+        
         // scaling
-        const startingWidth = document.querySelector('.NavigationLink').firstChild.offsetWidth;
-        const newWidth = evt.target.firstChild.offsetWidth;
-        const widthScaleChange = (newWidth/startingWidth) * 100
-        const translateVal = 'translate3d('+finalXPos+'px, 0px, 0) scale('+widthScaleChange+'%, 100%)';
-
-        console.log('start: ',startingWidth, ' new:',newWidth, ' change: ', widthScaleChange, '%')
-        movingDiv.style.transform = translateVal;
+        const newWidth = evt.target.offsetWidth;
+        const translateVal = 'translate('+finalXPos+'px, 0px)';
+        
+        movingDiv.style.width = newWidth+'px'
+        movingDiv.style.transform = translateVal
+        
+        // remove and add id
+        const links = document.querySelectorAll('.NavigationLink')
+        links.forEach((link) => {
+            link.removeAttribute('id')
+        })
+        evt.target.setAttribute('id', 'SelectedNavLink')
     }
 
     return (
@@ -48,7 +70,7 @@ export default function NavigationBar({ data }) {
                                 key={key}
                                 // style={{backgroundColor: colors[key]}}
                                 >
-                                    <h3>{link.title}</h3>
+                                    <h3 className={link.title}>{link.title}</h3>
                             </Link>
                         ))}
                     </div>

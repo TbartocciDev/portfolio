@@ -1,9 +1,8 @@
 .AboutPage {
-    display: flex;
-    flex-direction: column;
-    color: white;
+    /* display: flex;
+    flex-direction: column; */
 }
 .AboutPage main {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }

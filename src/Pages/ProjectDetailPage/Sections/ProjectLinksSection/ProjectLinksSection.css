@@ -1,6 +1,3 @@
-.ProjectLinksSection {
-    padding-bottom: 2rem;
-}
 .ProjectLinksSection .content{
     display: flex;
 }
@@ -27,4 +24,10 @@
 .project-link h2 {
     color: white;
     width: auto;
+}
+
+@media (max-width: 1000px) {
+    .project-links-div {
+        width: 100%;
+    }
 }

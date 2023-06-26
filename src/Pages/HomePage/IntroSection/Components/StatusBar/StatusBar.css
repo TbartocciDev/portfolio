@@ -82,3 +82,9 @@
 #exploring p {
     color: var(--exploringLight);
 }
+
+@media (max-width: 800px) {
+    .StatusBar p {
+        font-size: 5.25vw;
+    }
+}

@@ -9,6 +9,7 @@
     height: 90%;
     border-radius: 2rem;
     background-color: rgb(190, 244, 244);
+    
 }
 .previews-div img {
     height: calc(80% - 2rem);
