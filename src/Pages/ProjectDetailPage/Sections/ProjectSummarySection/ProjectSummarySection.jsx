@@ -10,7 +10,7 @@ export default function ProjectSummarySection({ data }) {
                     <h2>{data.summary}</h2>
                 </div>
                 <div className="img-div">
-                    <img src="iPhone.png" alt="" />
+                    <img src={data.homeScreen} alt="" />
                 </div>
             </div>
         </main>

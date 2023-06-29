@@ -46,10 +46,12 @@ const Data = {
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
                     qui officia deserunt mollit anim id est laborum`,
+                    hookScreen: "",
+                    homeScreen: "/mockups/homedark.png",
                     previews: [
-                        "/iPhone.png",
-                        "/iPhone.png",
-                        "/iPhone.png",
+                        "/mockups/encryptorrdark.png",
+                        "/mockups/howtodark.png",
+                        "/mockups/aboutdark.png",
                     ],
                     technologies: [
                         "Xcode",
@@ -81,10 +83,12 @@ const Data = {
                     summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
                     alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
                     the standard English alphabet into something unreadable, then back to readable.`,
+                    hookScreen: "/mockups/hook.png",
+                    homeScreen: "/mockups/homedark.png",
                     previews: [
-                        "/iPhone.png",
-                        "/iPhone.png",
-                        "/iPhone.png",
+                        "/mockups/encryptordark.png",
+                        "/mockups/howtodark.png",
+                        "/mockups/aboutdark.png",
                     ],
                     technologies: [
                         "Swift",
@@ -92,7 +96,7 @@ const Data = {
                         "Model View Controller(MVC)",
                         "Core Data",
                         "UiKit",
-                        "AVKit",
+                        "Light/Dark Support"
 
                     ],
                     links: [
@@ -114,6 +118,7 @@ const Data = {
                     summary: `An iOS App and game intended for teaching the user to recognize every countries'
                     flag through memorization based mini games. The data used for the App is pulled from a 
                     publically available API and munipulated to fit whats needed in my app.`,
+                    hookScreen: "",
                     previews: [
                         "/iPhone.png",
                         "/iPhone.png",
@@ -147,6 +152,7 @@ const Data = {
                     summary: `A spin off the typical first API Integration App everyone makes at some point. 
                     This App saves the last 5 movies you have viewed, as well as follows best practices for hitting 
                     an API.`,
+                    hookScreen: "",
                     previews: [
                         "/iPhone.png",
                         "/iPhone.png",

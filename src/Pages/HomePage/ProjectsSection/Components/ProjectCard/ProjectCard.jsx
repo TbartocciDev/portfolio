@@ -10,7 +10,7 @@ export default function ProjectCard({ data }) {
     return (
         <Link to={`/${data.name}`} onClick={scrollToTop}>
             <div className="ProjectCard">
-                <img src="/iPhone.png" alt="" />
+                <img src={data.hookScreen} alt="" />
                 <div className="info-section">
                     <h3>{data.projectType}</h3>
                     <h1>{data.name}</h1>
