@@ -1,6 +1,8 @@
 import "./ProjectSummarySection.css";
 
-export default function ProjectSummarySection({ data }) {
+export default function ProjectSummarySection({ data, mode }) {
+    var homeScreen = `${data.homeScreen}${mode}.png`
+
     return (
         <main className="ProjectSummarySection">
             <div className="content">
@@ -10,7 +12,7 @@ export default function ProjectSummarySection({ data }) {
                     <h2>{data.summary}</h2>
                 </div>
                 <div className="img-div">
-                    <img src={data.homeScreen} alt="" />
+                    <img src={homeScreen} alt="" />
                 </div>
             </div>
         </main>

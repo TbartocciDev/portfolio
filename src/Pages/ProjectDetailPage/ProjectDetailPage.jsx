@@ -7,15 +7,15 @@ import ProjectPreviewsSection from "./Sections/ProjectPreviewsSection/ProjectPre
 import ProjectTechnologiesSection from "./Sections/ProjectTechnologiesSection/ProjectTechnologiesSection";
 import ProjectLinksSection from "./Sections/ProjectLinksSection/ProjectLinksSection";
 
-export default function ProjectDetailPage({ data }) {
+export default function ProjectDetailPage({ data, mode }) {
 
     const { projectName } = useParams();
     const project = data.find((pro) => pro.name === projectName);
 
     return (
         <main className="ProjectDetailPage">
-            <ProjectSummarySection data={project}/>
-            <ProjectPreviewsSection data={project.previews}/>
+            <ProjectSummarySection data={project} mode={mode}/>
+            <ProjectPreviewsSection data={project.previews} mode={mode}/>
             <ProjectTechnologiesSection data={project.technologies}/>
             <ProjectLinksSection data={project.links}/>
         </main>

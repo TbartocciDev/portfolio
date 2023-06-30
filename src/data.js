@@ -47,7 +47,7 @@ const Data = {
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
                     qui officia deserunt mollit anim id est laborum`,
                     hookScreen: "",
-                    homeScreen: "/mockups/homedark.png",
+                    homeScreen: "/mockups/home",
                     previews: [
                         "/mockups/encryptorrdark.png",
                         "/mockups/howtodark.png",
@@ -84,11 +84,11 @@ const Data = {
                     alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
                     the standard English alphabet into something unreadable, then back to readable.`,
                     hookScreen: "/mockups/hook.png",
-                    homeScreen: "/mockups/homedark.png",
+                    homeScreen: "/mockups/home",
                     previews: [
-                        "/mockups/encryptordark.png",
-                        "/mockups/howtodark.png",
-                        "/mockups/aboutdark.png",
+                        "/mockups/encryptor",
+                        "/mockups/howto",
+                        "/mockups/about",
                     ],
                     technologies: [
                         "Swift",

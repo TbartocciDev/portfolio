@@ -3,9 +3,8 @@ import "./NavigationBar.css"
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
-export default function NavigationBar({ data }) {
+export default function NavigationBar({ data, mode, setMode}) {
     let movingDiv = null
-    const colors = ['red','blue','green','yellow',]
 
     useEffect(() => {
         movingDiv = document.querySelector('.nav-moving')
@@ -28,6 +27,14 @@ export default function NavigationBar({ data }) {
         const linkHeight = homePageLink.offsetHeight;
         // movingDiv.style.height = linkHeight + 'px'
 
+    }
+
+    function toggleMode() {
+        if (mode === "light") {
+            setMode("dark");
+        } else {
+            setMode("light");
+        }
     }
     
     function handleLinkClick(evt) {
@@ -68,14 +75,20 @@ export default function NavigationBar({ data }) {
                                 onClick={handleLinkClick}
                                 className="NavigationLink"
                                 key={key}
-                                // style={{backgroundColor: colors[key]}}
                                 >
                                     <h3 className={link.title}>{link.title}</h3>
                             </Link>
                         ))}
                     </div>
-                    <div className="nav-moving"></div>
+                    <div className="nav-moving">
+
+                    </div>
                 </div>
+                <div 
+                    className="light-dark"
+                    onClick={toggleMode}>
+                        <p>{mode}</p>
+                    </div>
             </div>
         </div>
     )
