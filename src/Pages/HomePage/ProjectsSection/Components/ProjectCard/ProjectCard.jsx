@@ -1,7 +1,8 @@
 import "./ProjectCard.css";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ data }) {
+export default function ProjectCard({ data, mode }) {
+    const hookUrl = `${data.hookScreen}${mode}.png`
 
     function scrollToTop() {
         document.body.scrollTop = document.documentElement.scrollTop = 0
@@ -10,7 +11,7 @@ export default function ProjectCard({ data }) {
     return (
         <Link to={`/${data.name}`} onClick={scrollToTop}>
             <div className="ProjectCard">
-                <img src={data.hookScreen} alt="" />
+                <img src={hookUrl} alt="" />
                 <div className="info-section">
                     <h3>{data.projectType}</h3>
                     <h1>{data.name}</h1>

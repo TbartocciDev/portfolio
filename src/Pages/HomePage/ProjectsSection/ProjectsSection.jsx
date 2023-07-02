@@ -4,7 +4,7 @@ import "./ProjectsSection.css"
 import ProjectCard from "./Components/ProjectCard/ProjectCard"
 import FilterView from "./Components/FilterView/FilterView"
 
-export default function ProjectsSection({ data }) {
+export default function ProjectsSection({ data, mode }) {
     return (
         <main className="ProjectsSection" id="Projects">
             <div className="content">
@@ -13,7 +13,7 @@ export default function ProjectsSection({ data }) {
                 {/* <FilterView data={data.projects}/> */}
                 <div className="ProjectsDiv">
                     {data.projects.map((project, key) => (
-                        <ProjectCard data={project} key={key}/>
+                        <ProjectCard data={project} key={key} mode={mode}/>
                     ))}
                 </div>
             </div>

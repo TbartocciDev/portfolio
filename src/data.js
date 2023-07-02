@@ -83,12 +83,12 @@ const Data = {
                     summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
                     alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
                     the standard English alphabet into something unreadable, then back to readable.`,
-                    hookScreen: "/mockups/hook.png",
-                    homeScreen: "/mockups/home",
+                    hookScreen: "/mockups/encryptor/hook",
+                    homeScreen: "/mockups/encryptor/home",
                     previews: [
-                        "/mockups/encryptor",
-                        "/mockups/howto",
-                        "/mockups/about",
+                        "/mockups/encryptor/encryptor",
+                        "/mockups/encryptor/howto",
+                        "/mockups/encryptor/about",
                     ],
                     technologies: [
                         "Swift",

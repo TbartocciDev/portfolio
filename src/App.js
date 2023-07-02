@@ -45,7 +45,7 @@ function App() {
     <div className="App" onScroll={handleScroll}>
       <NavigationBar data={data.nav} mode={mode} setMode={setMode}/>
       <Routes>
-        <Route path='/' element={<HomePage data={data.homePage}/>}></Route>
+        <Route path='/' element={<HomePage data={data.homePage} mode={mode}/>}></Route>
         <Route path='/:projectName' element={<ProjectDetailPage data={data.homePage.projectsSection.projects} mode={mode}/>}></Route>
         <Route path='/about' element={<AboutPage data={data.aboutPage}/>}></Route>
         <Route path='/contact' element={<ContactPage />}/>
