@@ -5,6 +5,8 @@ import { useEffect } from "react"
 
 export default function NavigationBar({ data, mode, setMode}) {
     let movingDiv = null
+    let modeIconColor = 'ffffff'
+    let modeIconUrl = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
 
     useEffect(() => {
         movingDiv = document.querySelector('.nav-moving')
@@ -30,10 +32,13 @@ export default function NavigationBar({ data, mode, setMode}) {
     }
 
     function toggleMode() {
+        let modeIcon = document.querySelector('.mode-icon')
         if (mode === "light") {
             setMode("dark");
+            modeIcon.src = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
         } else {
             setMode("light");
+            modeIcon.src = "https://icongr.am/clarity/sun.svg?size=128&color="+modeIconColor
         }
     }
     
@@ -87,7 +92,7 @@ export default function NavigationBar({ data, mode, setMode}) {
                 <div 
                     className="light-dark"
                     onClick={toggleMode}>
-                        <p>{mode}</p>
+                        <img src={modeIconUrl} alt="" className="mode-icon"/>
                     </div>
             </div>
         </div>

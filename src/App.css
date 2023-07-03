@@ -31,7 +31,7 @@ body {
   height: 100%;
   width: 80%;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
 }
 
 h1 {

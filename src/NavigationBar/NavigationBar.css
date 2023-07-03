@@ -55,11 +55,20 @@
 }
 
 .light-dark {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     position: absolute;
-    background-color: royalblue;
-    height: 100%;
-    width: 10vw;
+    background-color: rgba(36, 36, 36, 0.779);
+    border-radius: 50%;
     margin-left: 80vw;
+}
+.light-dark:hover {
+    cursor: pointer;
+}
+.mode-icon {
+    height: 6vh;
+    padding: 1vh;
 }
 #SelectedNavLink {
     /* color: red; */
