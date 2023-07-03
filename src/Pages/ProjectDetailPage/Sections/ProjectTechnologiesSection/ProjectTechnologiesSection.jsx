@@ -6,8 +6,8 @@ export default function ProjectTechnologiesSection({ data }) {
             <div className="content">
                 <h1>Technologies</h1>
                 <div className="technologies-div">
-                    {data.map((tech) => (
-                        <h2>
+                    {data.map((tech, key) => (
+                        <h2 key={key}>
                             {tech}
                         </h2>
                     ))}

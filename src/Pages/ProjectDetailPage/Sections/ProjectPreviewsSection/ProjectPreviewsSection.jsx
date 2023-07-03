@@ -10,8 +10,8 @@ export default function ProjectPreviewsSection({ data, mode }) {
         <main className="ProjectPreviewsSection">
             <div className="content">
                 <div className="previews-div">
-                    {previews.map((prev) => (
-                        <img src={prev} alt="" />
+                    {previews.map((prev, key) => (
+                        <img src={prev} alt="" key={key}/>
                     ))}
                 </div>
             </div>
