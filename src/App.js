@@ -20,7 +20,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 function App() {
   let NavBar = null
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light.png");
 
   const handleScroll = () => {
     const position = window.scrollY;
@@ -45,7 +45,7 @@ function App() {
     <div className="App" onScroll={handleScroll}>
       <NavigationBar data={data.nav} mode={mode} setMode={setMode}/>
       <Routes>
-        <Route path='/' element={<HomePage data={data.homePage} mode={mode}/>}></Route>
+        <Route path='/' element={<HomePage data={data.homePage} mode={mode} setMode={setMode}/>}></Route>
         <Route path='/:projectName' element={<ProjectDetailPage data={data.homePage.projectsSection.projects} mode={mode}/>}></Route>
         <Route path='/about' element={<AboutPage data={data.aboutPage}/>}></Route>
         <Route path='/contact' element={<ContactPage />}/>

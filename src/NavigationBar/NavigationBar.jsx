@@ -3,10 +3,17 @@ import "./NavigationBar.css"
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
-export default function NavigationBar({ data, mode, setMode}) {
+export default function NavigationBar({ data, setMode}) {
+    let mode = sessionStorage.getItem('mode')
+    let modeIconUrl = ""
     let movingDiv = null
     let modeIconColor = 'ffffff'
-    let modeIconUrl = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
+
+    if (mode === "dark.png") {
+        modeIconUrl = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
+    } else {
+        modeIconUrl = "https://icongr.am/clarity/sun.svg?size=128&color="+modeIconColor
+    }
 
     useEffect(() => {
         movingDiv = document.querySelector('.nav-moving')
@@ -16,9 +23,8 @@ export default function NavigationBar({ data, mode, setMode}) {
         const linkHeight = homePageLink.offsetHeight;
         homePageLink.setAttribute('id', 'SelectedNavLink')
 
-        console.log('normal: ',movingDiv.offsetWidth,' new: ', homePageLink.offsetWidth)
+        // console.log('normal: ',movingDiv.offsetWidth,' new: ', homePageLink.offsetWidth)
         movingDiv.style.width = homePageLink.offsetWidth+'px'
-        // movingDiv.style.height = ((linkHeight/window.innerHeight)*100)+'vh'
         movingDiv.style.height = linkHeight + 'px'
 
         movingDiv.style.top = (((1-(linkHeight/divHeight)))/4)*100+'px'
@@ -33,12 +39,16 @@ export default function NavigationBar({ data, mode, setMode}) {
 
     function toggleMode() {
         let modeIcon = document.querySelector('.mode-icon')
-        if (mode === "light") {
-            setMode("dark");
+        if (mode === "light.png") {
+            setMode("dark.png");
+            sessionStorage.setItem('mode', 'dark.png')
             modeIcon.src = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
+            console.log('mode set to dark')
         } else {
-            setMode("light");
+            setMode("light.png");
+            sessionStorage.setItem('mode', 'light.png')
             modeIcon.src = "https://icongr.am/clarity/sun.svg?size=128&color="+modeIconColor
+            console.log('mode set to light')
         }
     }
     
@@ -91,7 +101,8 @@ export default function NavigationBar({ data, mode, setMode}) {
                 </div>
                 <div 
                     className="light-dark"
-                    onClick={toggleMode}>
+                    onClick={toggleMode}
+                    title="Change the projects mode">
                         <img src={modeIconUrl} alt="" className="mode-icon"/>
                     </div>
             </div>

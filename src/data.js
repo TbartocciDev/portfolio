@@ -39,45 +39,6 @@ const Data = {
             subheader: "A selection of things I've built",
             projects: [
                 {   
-                    name: "Some App",
-                    role: "Sole Developer & Designer",
-                    summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                    qui officia deserunt mollit anim id est laborum`,
-                    hookScreen: "",
-                    homeScreen: "/mockups/home",
-                    previews: [
-                        "/mockups/encryptorrdark.png",
-                        "/mockups/howtodark.png",
-                        "/mockups/aboutdark.png",
-                    ],
-                    technologies: [
-                        "Xcode",
-                        "Swift",
-                        "UiKit",
-                        "API Integration",
-                        "Core Data",
-                        "Xcode",
-                        "Swift",
-                        "UiKit",
-                        "API Integration",
-                    ],
-                    links: [
-                        {
-                            title: "View Project",
-                            url: "https://www.google.com/"
-                        },
-                        {
-                            title: "View Code",
-                            url: "https://www.google.com/"
-                        },
-                    ],
-                    projectType: "On iOS Store",
-                    appType: "iOS",
-                },
-                {   
                     name: "The Encryptor",
                     role: "Sole Developer & Designer",
                     summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
@@ -118,7 +79,8 @@ const Data = {
                     summary: `An iOS App and game intended for teaching the user to recognize every countries'
                     flag through memorization based mini games. The data used for the App is pulled from a 
                     publically available API and munipulated to fit whats needed in my app.`,
-                    hookScreen: "",
+                    hookScreen: "/mockups/encryptor/hook",
+                    homeScreen: "/mockups/encryptor/home",
                     previews: [
                         "/iPhone.png",
                         "/iPhone.png",
@@ -152,7 +114,8 @@ const Data = {
                     summary: `A spin off the typical first API Integration App everyone makes at some point. 
                     This App saves the last 5 movies you have viewed, as well as follows best practices for hitting 
                     an API.`,
-                    hookScreen: "",
+                    hookScreen: "/mockups/encryptor/hook",
+                    homeScreen: "/mockups/encryptor/home",
                     previews: [
                         "/iPhone.png",
                         "/iPhone.png",
