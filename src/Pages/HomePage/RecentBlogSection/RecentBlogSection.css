@@ -1,8 +1,10 @@
 .RecentBlogSection {
     margin-bottom: 10vh;
 }
-.RecentBlogSection h1 {
+.RecentBlogSection h2 {
     margin-bottom: 6vh;
+    color: gray;
+    font-weight: 500;
 }
 .RecentBlogSection .blogs {
     display: grid;

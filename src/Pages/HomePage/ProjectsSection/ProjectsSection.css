@@ -11,6 +11,7 @@
 }
 .ProjectsSection h2 {
     color: gray;
+    font-weight: 500;
 }
 .ProjectsDiv {
     padding-top: 5vh;
