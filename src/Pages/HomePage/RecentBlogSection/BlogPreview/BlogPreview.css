@@ -1,0 +1,34 @@
+.BlogPreview {
+    display: flex;
+    flex-direction: column;
+}
+.BlogPreview .img {
+    width: 100%;
+    height: 25vh;
+    background-color: gray;
+}
+.BlogPreview h2 {
+    font-weight: 600;
+}
+.BlogPreview h3 {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-weight: 100;
+}
+.BlogPreview .readmore-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 1.5vh;
+    background-color: #068b35b3;
+}
+.BlogPreview .readmore-btn h3 {
+    font-weight: 900;
+}
+.BlogPreview .link {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 40%;
+}

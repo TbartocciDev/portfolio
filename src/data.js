@@ -24,128 +24,141 @@ const Data = {
             },
         ]
     },
-    homePage: {
-        introSection: {
-            header: "Greetings, I'm Tommy!",
-            subheader: "Software Engineer from New Jersey.",
-            summary: "I specialize in iOS and web development.",
-            statusData: {
-                status: "open",
-                info: "Looking for a new opportunity"
-            }
-        },
-        projectsSection: {
-            header: "Applications",
-            subheader: "A selection of things I've built",
-            projects: [
-                {   
-                    name: "The Encryptor",
-                    role: "Sole Developer & Designer",
-                    summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
-                    alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
-                    the standard English alphabet into something unreadable, then back to readable.`,
-                    hookScreen: "/mockups/encryptor/hook",
-                    homeScreen: "/mockups/encryptor/home",
-                    previews: [
-                        "/mockups/encryptor/encryptor",
-                        "/mockups/encryptor/howto",
-                        "/mockups/encryptor/about",
-                    ],
-                    technologies: [
-                        "Swift",
-                        "Xcode",
-                        "Model View Controller(MVC)",
-                        "Core Data",
-                        "UiKit",
-                        "Light/Dark Support"
-
-                    ],
-                    links: [
-                        {
-                            title: "View Project",
-                            url: "https://www.google.com/"
-                        },
-                        {
-                            title: "View Code",
-                            url: "https://www.google.com/"
-                        },
-                    ],
-                    projectType: "On iOS Store",
-                    appType: "iOS",
-                },
-                {   
-                    name: "Geographi",
-                    role: "Sole Developer & Designer",
-                    summary: `An iOS App and game intended for teaching the user to recognize every countries'
-                    flag through memorization based mini games. The data used for the App is pulled from a 
-                    publically available API and munipulated to fit whats needed in my app.`,
-                    hookScreen: "/mockups/encryptor/hook",
-                    homeScreen: "/mockups/encryptor/home",
-                    previews: [
-                        "/iPhone.png",
-                        "/iPhone.png",
-                        "/iPhone.png",
-                    ],
-                    technologies: [
-                        "Swift",
-                        "Xcode",
-                        "Model View Controller(MVC)",
-                        "Core Data",
-                        "UiKit",
-                        "API Integration",
-
-                    ],
-                    links: [
-                        {
-                            title: "View Project",
-                            url: "https://www.google.com/"
-                        },
-                        {
-                            title: "View Code",
-                            url: "https://www.google.com/"
-                        },
-                    ],
-                    projectType: "On iOS Store",
-                    appType: "iOS",
-                },
-                {   
-                    name: "Movie Database",
-                    role: "Sole Developer & Designer",
-                    summary: `A spin off the typical first API Integration App everyone makes at some point. 
-                    This App saves the last 5 movies you have viewed, as well as follows best practices for hitting 
-                    an API.`,
-                    hookScreen: "/mockups/encryptor/hook",
-                    homeScreen: "/mockups/encryptor/home",
-                    previews: [
-                        "/iPhone.png",
-                        "/iPhone.png",
-                        "/iPhone.png",
-                    ],
-                    technologies: [
-                        "Swift",
-                        "Xcode",
-                        "Model View Controller(MVC)",
-                        "Core Data",
-                        "UiKit",
-                        "API Integration",
-
-                    ],
-                    links: [
-                        {
-                            title: "View Project",
-                            url: "https://www.google.com/"
-                        },
-                        {
-                            title: "View Code",
-                            url: "https://www.google.com/"
-                        },
-                    ],
-                    projectType: "Personal Project",
-                    appType: "iOS",
-                },
-            ]
-
+    heroSection: {
+        header: "Greetings, I'm Tommy!",
+        subheader: "Software Engineer from New Jersey.",
+        summary: "I specialize in iOS and web development.",
+        statusData: {
+            status: "open",
+            info: "Looking for a new opportunity"
         }
+    },
+    projectsSection: {
+        header: "Applications",
+        subheader: "A selection of things I've built",
+        projects: [
+            {   
+                hookScreen: "/mockups/encryptor/hook",
+                name: "The Encryptor",
+                logo: "/mockups/encryptor/logo.png",
+                brief: "An app that allows users to read and write secret messages.",
+                role: "Sole Developer & Designer",
+                summary: `An iOS App made to encrypt and decrypt text using a series of cypher shifts, and
+                alphabets randomly constructed. The app itself is not a messenger, but a tool that will transform
+                the standard English alphabet into something unreadable, then back to readable.`,
+                technologies: [
+                    "Swift",
+                    "Xcode",
+                    "Model View Controller(MVC)",
+                    "Core Data",
+                    "UiKit",
+                    "Light/Dark Support"
+
+                ],
+                homeScreen: "/mockups/encryptor/home",
+                howItWorks: [
+                    {img: "/mockups/encryptor/howtodark.png", title: "Write Messages", summary: "Users can write messages"},
+                    {img: "", title: "Read Messages", summary: "Users can read messages"}
+                ],
+                previews: [
+                    "/mockups/encryptor/encryptor",
+                    "/mockups/encryptor/howto",
+                    "/mockups/encryptor/about",
+                ],
+                links: [
+                    {
+                        title: "View Project",
+                        url: "https://www.google.com/"
+                    },
+                    {
+                        title: "View Code",
+                        url: "https://www.google.com/"
+                    },
+                ],
+                projectType: "On iOS Store",
+                appType: "iOS",
+            },
+            // {   
+            //     name: "Geographi",
+            //     role: "Sole Developer & Designer",
+            //     summary: `An iOS App and game intended for teaching the user to recognize every countries'
+            //     flag through memorization based mini games. The data used for the App is pulled from a 
+            //     publically available API and munipulated to fit whats needed in my app.`,
+            //     hookScreen: "/mockups/encryptor/hook",
+            //     homeScreen: "/mockups/encryptor/home",
+            //     previews: [
+            //         "/iPhone.png",
+            //         "/iPhone.png",
+            //         "/iPhone.png",
+            //     ],
+            //     technologies: [
+            //         "Swift",
+            //         "Xcode",
+            //         "Model View Controller(MVC)",
+            //         "Core Data",
+            //         "UiKit",
+            //         "API Integration",
+
+            //     ],
+            //     links: [
+            //         {
+            //             title: "View Project",
+            //             url: "https://www.google.com/"
+            //         },
+            //         {
+            //             title: "View Code",
+            //             url: "https://www.google.com/"
+            //         },
+            //     ],
+            //     projectType: "On iOS Store",
+            //     appType: "iOS",
+            // },
+            // {   
+            //     name: "Movie Database",
+            //     role: "Sole Developer & Designer",
+            //     summary: `A spin off the typical first API Integration App everyone makes at some point. 
+            //     This App saves the last 5 movies you have viewed, as well as follows best practices for hitting 
+            //     an API.`,
+            //     hookScreen: "/mockups/encryptor/hook",
+            //     homeScreen: "/mockups/encryptor/home",
+            //     previews: [
+            //         "/iPhone.png",
+            //         "/iPhone.png",
+            //         "/iPhone.png",
+            //     ],
+            //     technologies: [
+            //         "Swift",
+            //         "Xcode",
+            //         "Model View Controller(MVC)",
+            //         "Core Data",
+            //         "UiKit",
+            //         "API Integration",
+
+            //     ],
+            //     links: [
+            //         {
+            //             title: "View Project",
+            //             url: "https://www.google.com/"
+            //         },
+            //         {
+            //             title: "View Code",
+            //             url: "https://www.google.com/"
+            //         },
+            //     ],
+            //     projectType: "Personal Project",
+            //     appType: "iOS",
+            // },
+        ],
+    },
+    resumeSection: {
+        experiences: [
+            {type: "work", title: "Apprentice", company:"General Assembly", date: "Mar 2023 - Jun 2023", description: "Software Engineering Bootcamp"},
+            {type: "work", title: "Independent Developer", company:"Self Employed", date: "2020 - Present", description: "Self taught iOS development. Designing, developing, deploying apps."},
+            {type: "work", title: "Florist", company:"Angelones Florist", date: "Feb 2021 - Present", description: "General Florist"},
+            {type: "education", title: "Bootcamp", company:"General Assembly", date: "Mar 2023 - Jun 2023", description: "Bootcamp and apprenticeship. JavaScript, React, HTML, CSS."},    
+            {type: "education", title: "Async Course", company:"Udemy", date: "Completed Jan 2022", description: "iOS 14 & Swift - The Complete iOS Developer Bootcamp"},    
+            {type: "education", title: "Associates Degree", company:"Raritan Valley Community College", date: "Sep 2017 - May 2020", description: "General Studies: Arts & Sciences"},
+        ]
     },
     aboutPage: {
         introSection: {
@@ -193,6 +206,14 @@ const Data = {
         outsideSection: {
 
         }
+    },
+    blogPage: {
+        colors: ["#680568b3","#8b6c06b3",,"#068b35b3"],
+        blogs: [
+            {title: "My experience learning about prefetching and batches", subject: "iOS development", date: "Jul 18, 2023", img: ""},
+            {title: "My experience learning", subject: "iOS development", date: "Jul 18, 2023", img: ""},
+            {title: "My experience learning", subject: "iOS development", date: "Jul 18, 2023", img: ""},
+        ]
     }
 }
 const Old = {

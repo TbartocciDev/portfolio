@@ -12,7 +12,7 @@ export default function IntroSection({ data }) {
                 <h1>{data.subheader}</h1>
                 <h2>{data.summary}</h2>
                 <StatusBar data={data.statusData}/>
-                <ProjectButton />
+                {/* <ProjectButton /> */}
             </div>
         </main>
     )

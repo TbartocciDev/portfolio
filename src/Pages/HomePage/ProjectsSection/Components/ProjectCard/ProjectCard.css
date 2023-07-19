@@ -4,42 +4,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    border-radius: 2rem;
-    background-color: #141414;
     height: 65vh;
-    transition: 1s ease;
-}
-.ProjectCard:hover {
-    transform: scale(104%);
+    
 }
 a, a:visited, a:active, a:link {
   text-decoration: none;  
 }
 .ProjectCard h1 {
     font-size: 3rem;
-    margin-left: 2rem;
 }
 .ProjectCard .info-section {
+    display: grid;
+    grid-template-rows: 50% 20% 30%;
+    width: 90%;
+    height: 30%;
+}
+.ProjectCard .name-logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(67, 67, 67);
-    width: 100%;
-    height: 25%;
-    border-radius: 0 0 2rem 2rem;
+    flex-direction: row;
+    align-items: center;
+}
+.ProjectCard .logo-img {
+    height: 7vh;
+    width: 7vh;
+    margin-right: 2vh;
+    border-radius: 1vh;
 }
 .ProjectCard h3 {
-    margin-left: 2rem;
     color: gray;
+    /* background-color: rebeccapurple; */
 }
 .ProjectCard img {
     height: 70%;
     width: 100%;
     object-fit: contain;
 }
-.type {
-    position: absolute;
-    width: 100%;
-    margin-bottom: 58vh;
-    padding-left: 2rem;
+
+.details-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 96, 128, 0.7);
+    border-radius: 1.5vh;
+    transition: 1s ease;
+}
+.details-btn:hover {
+    transform: scale(104%);
+}
+.details-btn h3 {
+    color: white;
+}
+
+.ProjectCard .link {
+    /* background-color: red; */
+    width: 30%;
 }

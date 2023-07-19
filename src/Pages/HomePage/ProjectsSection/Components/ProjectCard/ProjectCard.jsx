@@ -9,15 +9,20 @@ export default function ProjectCard({ data, mode }) {
     }
     
     return (
-        <Link to={`/${data.name}`} onClick={scrollToTop}>
+        
             <div className="ProjectCard">
                 <img src={process.env.PUBLIC_URL+hookUrl} alt="" />
                 <div className="info-section">
-                    <h3>{data.projectType}</h3>
-                    <h1>{data.name}</h1>
+                    <div className="name-logo">
+                        <img src={process.env.PUBLIC_URL+data.logo} alt="/" className="logo-img"/>
+                        <h1>{data.name}</h1>
+                    </div>
+                    <h3>{data.brief}</h3>
+                    <Link to={`/${data.name}`} onClick={scrollToTop} className="link">
+                        <div className="details-btn"><h3>More Details</h3></div>
+                    </Link>
                 </div>
-                <h3 className="type">{data.appType}</h3>
             </div>
-        </Link>
+        
     )
 }

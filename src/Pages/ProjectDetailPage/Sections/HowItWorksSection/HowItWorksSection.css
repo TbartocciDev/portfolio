@@ -1,0 +1,36 @@
+.HowItWorksSection {
+    
+}
+.HowItWorksSection h1 {
+    margin-bottom: 2vh;
+    font-size: 5vh;
+}
+.HowItWorksSection h2 {
+    font-weight: 600;
+}
+.HowItWorksSection h3 {
+    font-weight: 500;
+}
+.instructions-container {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.InstructionCard {
+    position: relative;
+    justify-content: center;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 80% 10% 10%;
+    /* background-color: red; */
+}
+.InstructionCard img {
+    /* background-color: blue; */
+    height: 100%;
+    width: auto;
+}
+.bottom {
+    display: flex;
+    align-items: end;
+}

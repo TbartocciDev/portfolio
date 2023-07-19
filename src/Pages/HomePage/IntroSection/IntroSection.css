@@ -4,13 +4,15 @@
     --CRed: #b75854;
 }
 .IntroSection {
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
+    /* background-color: #276ab9; */
 }
 .IntroSection .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: #b75854; */
 }
 .IntroSection h1 {
     color: white;

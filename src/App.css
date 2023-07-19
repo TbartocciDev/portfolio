@@ -29,8 +29,9 @@ body {
 }
 .App main main .content {
   height: 100%;
-  width: 80%;
-  padding-top: 10vh;
+  width: 70%;
+  /* padding-top: 10vh; */
+  margin-top: 10vh;
   /* padding-bottom: 10vh; */
 }
 

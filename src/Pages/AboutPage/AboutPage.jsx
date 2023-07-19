@@ -8,7 +8,7 @@ export default function AboutPage({ data }) {
     return (
         <main className="AboutPage">
             <AboutIntroSection data={data.introSection}/>
-            <AboutTechnologiesSection data={data.technologiesSection}/>
+            {/* <AboutTechnologiesSection data={data.technologiesSection}/> */}
         </main>
     )
 }

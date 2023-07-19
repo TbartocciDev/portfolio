@@ -1,0 +1,11 @@
+.RecentBlogSection {
+    margin-bottom: 10vh;
+}
+.RecentBlogSection h1 {
+    margin-bottom: 6vh;
+}
+.RecentBlogSection .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}

@@ -1,29 +1,47 @@
 .ProjectSummarySection {
-    padding-top: 4vh;
     color: white;
     /* background-color: red; */
+    /* height: 75vh; */
 }
 .ProjectSummarySection .content {
     display: grid;
     grid-template-columns: 60% 40%;
-    align-items: end;
+    /* background-color: black; */
 }
 .ProjectSummarySection .summary-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .ProjectSummarySection .img-div {
     display: flex;
     justify-content: end;
-    height: 70vh;
+    height: 65vh;
     transition: 1s ease-in;
 }
+.ProjectSummarySection h1 {
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
 .ProjectSummarySection h2 {
-    margin-top: 2rem;
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+    font-weight: 600;
     color: gray;
 }
-.ProjectSummarySection h4 {
-    margin-top: 2rem;
+.tech-list {
+    margin-left: 20px;
+}
+.tech-list h2 {
+    color: white;
+    font-size: 2.5vh;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+.ProjectSummarySection h3 {
+    font-weight: 100;
+    font-size: 2.75vh;
+    margin-bottom: 2vh;
 }
 
 @media (max-width: 1000px) {

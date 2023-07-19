@@ -3,26 +3,47 @@
     /* height: 90vh; */
     /* background-color: green; */
 }
-.AboutIntroSection .content {
-    margin-top: 10vh;
+.AboutIntroSection .summary {
+    margin-top: 4vh;
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 35% 65%;
 }
 .AboutIntroSection .about-intro-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: right;
 }
 .AboutIntroSection .img-div {
     display: flex;
-    justify-content: right;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+}
+.AboutIntroSection .img-div .img-content {
+    width: 60%;
 }
 .AboutIntroSection h2 {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.AboutIntroSection h3{
+    margin-top: 1vh;
+    font-weight: 300;
 }
 .AboutIntroSection img {
-    width: 35vh;
+    width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 30%;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#normal {
+    content: url("/public/straight.jpeg");
+}
+#normal:hover {
+    scale: 101%;
+    content: url("/public/smirk.jpeg");
+}
+#funny {
+    content: url("/public/funny.jpeg");
 }

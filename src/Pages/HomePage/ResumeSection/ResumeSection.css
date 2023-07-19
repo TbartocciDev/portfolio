@@ -1,0 +1,13 @@
+.ResumeSection {
+    margin-bottom: 10vh;
+}
+.ResumeSection .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.ResumeSection h2 {
+    font-weight: 400;
+    margin-bottom: 1vh;
+    margin-top: 5vh;
+}

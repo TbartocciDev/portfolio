@@ -1,5 +1,10 @@
 .ProjectsSection {
     width: 100%;
+    /* background-color: aqua; */
+    padding-bottom: 10vh;
+}
+.ProjectsSection .content {
+    /* background-color: red; */
 }
 .ProjectsSection h1 {
     color: white;
@@ -8,7 +13,7 @@
     color: gray;
 }
 .ProjectsDiv {
-    padding-top: 4vh;
+    padding-top: 5vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
