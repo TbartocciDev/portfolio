@@ -21,7 +21,10 @@
     text-align: center;
 }
 .AboutIntroSection .img-div .img-content {
-    width: 60%;
+    width: 80%;
+}
+.AboutIntroSection h1 {
+    margin-top: 10vh;
 }
 .AboutIntroSection h2 {
     margin-bottom: 1rem;
@@ -29,6 +32,7 @@
 .AboutIntroSection h3{
     margin-top: 1vh;
     font-weight: 300;
+    color: gray;
 }
 .AboutIntroSection img {
     width: 100%;
@@ -46,4 +50,35 @@
 }
 #funny {
     content: url("/public/funny.jpeg");
+}
+
+@media (max-width: 1350px) {
+    .AboutIntroSection .summary {
+        grid-template-columns: 1fr;
+    }
+    .AboutIntroSection .img-div {
+        height: 35vh;
+        display: flex;
+        align-items: center;
+    }
+    .AboutIntroSection img {
+        height: 30vh;
+        width: 30vh;
+    }
+}
+@media (max-width: 800px) {
+    .AboutIntroSection .summary {
+        grid-template-columns: 1fr;
+    }
+    .AboutIntroSection .img-div {
+        display: flex;
+        align-items: center;
+    }
+    .AboutIntroSection .about-intro-text {
+        margin-top: 4vh;
+    }
+    .AboutIntroSection h2{
+        font-weight: 100;
+        font-size: 2.75vh;
+    }
 }

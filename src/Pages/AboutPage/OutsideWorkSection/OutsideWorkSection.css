@@ -1,0 +1,54 @@
+.OutsideWorkSection {
+    margin-bottom: 10vh;
+}
+.OutsideWorkSection h1 {
+    margin-bottom: 6vh;
+}
+.OutsideWorkSection h2 {
+    pointer-events: none;
+}
+.OutsideWorkSection .subject-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5vh 50vh;
+    gap: 2vh;
+}
+.subject-container .subject {
+    width: 25vmin;
+    cursor: pointer;
+    border: 1px solid white;
+    text-align: center;
+}
+.subject-container .img {
+    grid-row: span 2;
+}
+.subject-container img {
+    background-color: aqua;
+    width: 70%;
+    height: 100%;
+
+}
+.subject-container .btns-container {
+    display: flex;
+
+}
+#selected {
+    background-color: rgb(8, 186, 106);
+}
+.subject-container .subject {
+    display: flex;
+    align-items: center;
+}
+.subject-container .subject:hover {
+    background-color: rgba(165, 253, 206, 0.3);
+}
+
+@media (max-width: 800px) {
+    .subject-container .img {
+        display: none;
+    }
+    .OutsideWorkSection .subject-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh;
+    }
+}

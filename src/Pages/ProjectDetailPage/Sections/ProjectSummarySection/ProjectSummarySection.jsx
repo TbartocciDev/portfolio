@@ -20,7 +20,7 @@ export default function ProjectSummarySection({ data, mode }) {
                     </div>
                 </div>
                 <div className="img-div">
-                    <img src={process.env.PUBLIC_URL+homeScreen} alt="" />
+                    <img src={process.env.PUBLIC_URL+homeScreen+'.png'} alt="" />
                 </div>
             </div>
         </main>

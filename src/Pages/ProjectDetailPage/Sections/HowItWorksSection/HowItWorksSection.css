@@ -1,6 +1,3 @@
-.HowItWorksSection {
-    
-}
 .HowItWorksSection h1 {
     margin-bottom: 2vh;
     font-size: 5vh;
@@ -23,14 +20,18 @@
     height: 60vh;
     display: grid;
     grid-template-rows: 80% 10% 10%;
-    /* background-color: red; */
 }
 .InstructionCard img {
-    /* background-color: blue; */
     height: 100%;
     width: auto;
 }
 .bottom {
     display: flex;
     align-items: end;
+}
+
+@media (max-width: 800px) {
+    .instructions-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

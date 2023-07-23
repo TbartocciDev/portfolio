@@ -11,3 +11,6 @@
     margin-bottom: 1vh;
     margin-top: 5vh;
 }
+
+@media (max-width: 800px) {
+}

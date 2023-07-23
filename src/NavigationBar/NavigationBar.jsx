@@ -9,7 +9,7 @@ export default function NavigationBar({ data, setMode}) {
     let movingDiv = null
     let modeIconColor = 'ffffff'
 
-    if (mode === "dark.png") {
+    if (mode === "dark") {
         modeIconUrl = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
     } else {
         modeIconUrl = "https://icongr.am/clarity/sun.svg?size=128&color="+modeIconColor
@@ -24,8 +24,8 @@ export default function NavigationBar({ data, setMode}) {
         homePageLink.setAttribute('id', 'SelectedNavLink')
 
         // console.log('normal: ',movingDiv.offsetWidth,' new: ', homePageLink.offsetWidth)
-        movingDiv.style.width = homePageLink.offsetWidth+'px'
-        movingDiv.style.height = linkHeight + 'px'
+        // movingDiv.style.width = homePageLink.offsetWidth+'px'
+        // movingDiv.style.height = linkHeight + 'px'
 
         movingDiv.style.top = (((1-(linkHeight/divHeight)))/4)*100+'px'
     },[])
@@ -39,14 +39,14 @@ export default function NavigationBar({ data, setMode}) {
 
     function toggleMode() {
         let modeIcon = document.querySelector('.mode-icon')
-        if (mode === "light.png") {
-            setMode("dark.png");
-            sessionStorage.setItem('mode', 'dark.png')
+        if (mode === "light") {
+            setMode("dark");
+            sessionStorage.setItem('mode', 'dark')
             modeIcon.src = "https://icongr.am/clarity/moon.svg?size=128&color="+modeIconColor
             console.log('mode set to dark')
         } else {
-            setMode("light.png");
-            sessionStorage.setItem('mode', 'light.png')
+            setMode("light");
+            sessionStorage.setItem('mode', 'light')
             modeIcon.src = "https://icongr.am/clarity/sun.svg?size=128&color="+modeIconColor
             console.log('mode set to light')
         }
@@ -68,14 +68,15 @@ export default function NavigationBar({ data, setMode}) {
         const newWidth = evt.target.offsetWidth;
         const translateVal = 'translate('+finalXPos+'px, 0px)';
         
-        movingDiv.style.width = newWidth+'px'
-        movingDiv.style.transform = translateVal
+        // movingDiv.style.width = newWidth+'px'
+        // movingDiv.style.transform = translateVal
         
         // remove and add id
         const links = document.querySelectorAll('.NavigationLink')
         links.forEach((link) => {
             link.removeAttribute('id')
         })
+        
         evt.target.setAttribute('id', 'SelectedNavLink')
     }
 
@@ -91,7 +92,7 @@ export default function NavigationBar({ data, setMode}) {
                                 className="NavigationLink"
                                 key={key}
                                 >
-                                    <h3 className={link.title}>{link.title}</h3>
+                                <h3 className={link.title}>{link.title}</h3>
                             </Link>
                         ))}
                     </div>
@@ -103,8 +104,8 @@ export default function NavigationBar({ data, setMode}) {
                     className="light-dark"
                     onClick={toggleMode}
                     title="Change the projects mode">
-                        <img src={modeIconUrl} alt="" className="mode-icon"/>
-                    </div>
+                    <img src={modeIconUrl} alt="" className="mode-icon"/>
+                </div>
             </div>
         </div>
     )

@@ -1,14 +1,25 @@
 import "./AboutPage.css"
 
-// Section
 import AboutIntroSection from "./AboutIntroSection/AboutIntroSection"
-import AboutTechnologiesSection from "./AboutTechnologiesSection/AboutTechnologiesSection"
+import OutsideWorkSection from "./OutsideWorkSection/OutsideWorkSection"
 
-export default function AboutPage({ data }) {
+export default function AboutPage({ data, subject, setSubject, setPage}) {
+
+    if (!sessionStorage.getItem('outsideWork')) {
+        sessionStorage.setItem('outsideWork', 'hobbies')
+    }
+    
+    setPage("about")
+
     return (
         <main className="AboutPage">
             <AboutIntroSection data={data.introSection}/>
-            {/* <AboutTechnologiesSection data={data.technologiesSection}/> */}
+            <OutsideWorkSection 
+            data={data.outsideWork} 
+            storedSubject={sessionStorage.getItem('outsideWork')}
+            subject={subject}
+            setSubject={setSubject}
+             />
         </main>
     )
 }

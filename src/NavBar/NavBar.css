@@ -1,0 +1,33 @@
+.NavBar {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1;
+    background-color: rgb(20, 20, 20);
+}
+.NavBar .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+}
+.NavBar .nav-links {
+    width: 40%;
+}
+.NavBar p {
+    text-align: center;
+    font-size: 3.5vh;
+    color: white;
+}
+#currPage {
+    text-decoration: underline;
+}
+
+.NavBar a:active, a:visited, a:link {
+    color: white;
+    text-decoration: none;
+}

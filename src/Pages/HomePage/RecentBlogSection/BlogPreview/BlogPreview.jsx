@@ -10,11 +10,11 @@ export default function BlogPreview({ data, color }) {
     return (
         <div className="BlogPreview">
             <div className="img">
-                <img src="" alt="" />
+                <img src={data.header.img} alt="" />
             </div>
-            <h3>{data.date}</h3>
-            <h2>{data.title}</h2>
-            <Link onClick={scrollToTop} className="link">
+            <h3>{data.header.date}</h3>
+            <h2>{data.header.title}</h2>
+            <Link to={`/blog/${data.num}`} onClick={scrollToTop} className="link">
                 <div className="readmore-btn"
                 style={{backgroundColor: color}}
                 ><h3>Read More</h3></div>

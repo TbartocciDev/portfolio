@@ -1,23 +1,26 @@
 .ProjectCard {
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: end;
-    height: 65vh;
-    
 }
 a, a:visited, a:active, a:link {
   text-decoration: none;  
 }
+.ProjectCard .img {
+    /* background-color: red; */
+}
+.ProjectCard .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 .ProjectCard h1 {
     font-size: 3rem;
 }
-.ProjectCard .info-section {
-    display: grid;
-    grid-template-rows: 50% 20% 30%;
-    width: 90%;
-    height: 30%;
+.ProjectCard h3 {
+    color: gray;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 .ProjectCard .name-logo {
     display: flex;
@@ -30,16 +33,6 @@ a, a:visited, a:active, a:link {
     margin-right: 2vh;
     border-radius: 1vh;
 }
-.ProjectCard h3 {
-    color: gray;
-    /* background-color: rebeccapurple; */
-}
-.ProjectCard img {
-    height: 70%;
-    width: 100%;
-    object-fit: contain;
-}
-
 .details-btn {
     height: 100%;
     display: flex;
@@ -55,8 +48,12 @@ a, a:visited, a:active, a:link {
 .details-btn h3 {
     color: white;
 }
-
 .ProjectCard .link {
-    /* background-color: red; */
-    width: 30%;
+    width: 20vmin;
+}
+
+@media (max-width: 800px) {
+    .ProjectCard .link {
+        width: 30vmin;
+    }
 }
